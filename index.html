@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UÑAS,NAILS,NAILS ART,UÑAS ESCULPIDAS,UÑAS DECORADAS,UÑAS 2020,PAGINAS DE UÑAS">
+    <meta name="description" content="Si buscás un cambio y disfrutar un dia para vos...Yumara Nails es la mejor elección">
+    <title>Yumara Estética</title>
+    <!-- CSS ANIMACION Y BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <!-- CSS PROPIO -->
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos1.css">
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="animate__animated animate__fadeInDown">
+        <a href="index.html.html"> <img class="img-fluid" src="img/Logo Final.jpeg" alt="Logo"> </a>
+        <h1> YUMARA ESTÉTICA </h1>
+    </header> 
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Yumara Nails</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <ul>
+                <li class="submenu">
+                  <img src="img/cart.png" id="img-carrito">
+                  <div id="carrito">
+    
+                    <table id="lista-carrito" class="u-full-width">
+                      <thead>
+                        <tr>
+                          <th>Imagen</th>
+                          <th>Servicio</th>
+                          <th>Precio</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+    
+                    <div>
+                      <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                      </div>
+                    
+                    <div>
+                      <a href="#" id="finalizar-compra" class="button u-full-width">Finalizar Compra</a>
+                    </div>
+                  
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  
+    <main id="my-servi">
+       <h2> Nuestros servicios : </h2>
+
+       <div id="botonSelector">
+
+       </div>
+
+       <div id="lista-productos" class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                            <img src="img/gelificadas.jpeg" class="img-fluid card-img-top" alt="gelificada">
+                            <div class="card-body">
+                                <span class="card-title"> ESTRUCTURA EN GEL </span>
+                                <p class="card-text">Son extensiones que se añaden a tu uña; puedes elegir su largo, esmaltado y decoración.</p>
+                                <p>TIEMPO ESTIMADO: Aproximadamente 2 horas y media.</p>
+                                <p class="precio"> PRECIO: <span> $650 </span> </p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                                    Al Carrito</a>  
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">    
+                    <div class="card" style="width: 18rem;">
+                            <img src="img/acrilicas.jpeg" class="img-fluid card-img-top" alt="acrilica">
+                            <div class="card-body">
+                              <span class="card-title"> ESTRUCTURA EN ACRÍLICO </span>
+                              <p class="card-text">Son extensiones que se añaden a tu uña; puedes elegir su largo, esmaltado y decoración. Son más resistentes que las uñas gelificadas.</p>
+                              <p> TIEMPO ESTIMADO: Aproximadamente 2 horas y media. </p>
+                              <p class="precio"> PRECIO: <span> $680 </span> </p>
+                              <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar
+                                    Al Carrito</a>  
+                            </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="row" id="separar">
+                <div class="col-sm-6">   
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/esmaltado semi.jpeg" class="img-fluid card-img-top" alt="semipermanente">
+                        <div class="card-body">
+                          <span class="card-title"> ESMALTADO SEMIPERMANENTE </span>
+                          <p class="card-text">Es una técnica que mantiene las uñas perfectamente pintadas entre 15 y 20 días.</p>
+                          <p>TIEMPO ESTIMADO: Aproximadamente 1 hora y media.</p>
+                          <p class="precio"> PRECIO: <span>$450 </span></p>
+                          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar
+                              Al Carrito</a> 
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6">         
+                  <div class="card" style="width: 18rem;">
+                      <img src="img/kapping.jpeg" class="img-fluid card-img-top" alt="kapping">
+                      <div class="card-body">
+                        <span class="card-title"> KAPPING GEL </span>
+                        <p class="card-text">Acompañan el crecimiento de tu uña fortaleciéndola. Ideal para clientas con uñas débiles, quebradizas y/o con escamaciones.</p>
+                        <p>TIEMPO ESTIMADO: Aproximadamente 1 hora y media.</p>
+                        <p class="precio"> PRECIO:<span> $500 </span>  </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar
+                              Al Carrito</a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                  <div class="card" style="width: 18rem;">
+                        <img src="img/capsula.jpeg" class="img-fluid card-img-top" alt="capsula">
+                        <div class="card-body">
+                            <span class="card-title"> CÁPSULA DUAL </span>
+                            <p class="card-text">Son extensiones que se añaden a tu uña, se realizan más rápido y tienen acabado de salón.</p>
+                            <p>TIEMPO ESTIMADO: Aproximadamente 2 horas.</p>
+                            <p class="precio"> PRECIO: <span> $650 </span> </p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar
+                                  Al Carrito</a>  
+                        </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="card" style="width: 18rem;">
+                      <img src="img/belleza de pies.jpeg" class="img-fluid card-img-top" alt="belleza pies">
+                      <div class="card-body">
+                          <span class="card-title"> BELLEZA DE PIES </span>
+                          <p class="card-text">Consiste en darle un especial cuidado a tus pies y a tus uñas, dejándolos prolijos y bellos. Incluye esmaltado semipermanente.</p>
+                          <p>TIEMPO ESTIMADO: Aproximadamente 1 hora.</p>
+                          <p class="precio"> PRECIO: <span> $400 </span> </p>
+                          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar
+                                    Al Carrito</a>  
+                      </div>
+                  </div>
+              </div>
+            </div> 
+
+            <div class="row" id="separar">
+              <div class="col-sm-6">   
+                  <div class="card" style="width: 18rem;">
+                      <img src="img/criolipolisis1.jpg" class="img-fluid card-img-top" alt="semipermanente">
+                      <div class="card-body">
+                        <span class="card-title"> CRIOLIPOLISIS </span>
+                        <p class="card-text"> Es un método que nos permite eliminar grasa localizada gracias a la destrucción de las células grasas  por congelación de las mismas. </p>
+                        <p>TIEMPO ESTIMADO: Aproximadamente 45 minutos.</p>
+                        <p class="precio"> PRECIO: <span>$1100 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar
+                            Al Carrito</a> 
+                      </div>
+                  </div>
+              </div> 
+              <div class="col-sm-6">         
+                <div class="card" style="width: 18rem;">
+                    <img src="img/masajes3.jpg" class="img-fluid card-img-top" alt="kapping">
+                    <div class="card-body">
+                      <span class="card-title"> MASAJES </span>
+                      <p class="card-text"> Es una terapia manual destinada a mejorar el bienestar de la persona ya que su máximo objetivo es aumentar la producción de endorfinas en nuestro cuerpo.</p>
+                      <p>TIEMPO ESTIMADO: Aproximadamente 1 hora.</p>
+                      <p class="precio"> PRECIO:<span> $850 </span>  </p>
+                      <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                      <img src="img/depilacion3.jpg" class="img-fluid card-img-top" alt="capsula">
+                      <div class="card-body">
+                          <span class="card-title"> DEPILACIÓN </span>
+                          <p class="card-text"> Es una técnica cosmética que consiste en eliminar el vello de alguna zona del cuerpo. </p>
+                          <p>TIEMPO ESTIMADO: Aproximadamente 2 horas.</p>
+                          <p class="precio"> PRECIO: <span> $1500 </span> </p>
+                          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar
+                                Al Carrito</a>  
+                      </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/electrodos1.jpg" class="img-fluid card-img-top" alt="belleza pies">
+                    <div class="card-body">
+                        <span class="card-title"> ELECTRODOS </span>
+                        <p class="card-text">Consiste en usar la corriente eléctrica para simular los impulsos que contraen la musculatura del organismo, promoviendo la tonificación.</p>
+                        <p>TIEMPO ESTIMADO: Aproximadamente 45 minutos.</p>
+                        <p class="precio"> PRECIO: <span> $700 </span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar
+                                  Al Carrito</a>  
+                    </div>
+                </div>
+            </div>
+          </div> 
+
+        </div>    
+    </main>
+  
+    <section class="aclaracion"> 
+        <p>  *Precio y tiempo estimado (dependerá del diseño y servicio elegido).  </p>
+        <div class="actualizacion" id="my-servi"> 
+          
+        </div>
+    </section>
+  
+    <footer class="footer text-faded text-center">
+        <div class="container">
+          <p class="m-0 small">Copyright &copy; 2021 Camila Murua</p>
+        </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Sweet Alert -->
+    <script src="js/sweetalert2.all.min.js"></script>
+    
+    <!-- SCRIPT PROPIO -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
